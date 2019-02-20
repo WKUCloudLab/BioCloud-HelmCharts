@@ -3,4 +3,4 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
   
- restartPolicy: Never
+restartPolicy: Never
