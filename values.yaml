@@ -1,0 +1,6 @@
+image:
+  repository: biocloud-frontend-testfork
+  tag: latest
+  pullPolicy: IfNotPresent
+  
+ restartPolicy: Never
