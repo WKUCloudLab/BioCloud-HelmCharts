@@ -1,5 +1,5 @@
 image:
-  repository: bly01854:biocloud-frontend-testfork
+  repository: bly01854/biocloud-frontend-testfork
   tag: latest
   pullPolicy: IfNotPresent
   
