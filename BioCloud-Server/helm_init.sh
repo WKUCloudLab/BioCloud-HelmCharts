@@ -13,6 +13,8 @@ helm init
 git clone https://github.com/WKUCloudLab/BioCloud-HelmCharts.git
 cd BioCloud-HelmCharts
 helm package BioCloud-Server
+# Wait for tiller to initialize
+sleep 5
 helm install BioCloud-Server-0.1.0.tgz
 
 end=`date +%s`
