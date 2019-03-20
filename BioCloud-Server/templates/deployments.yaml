@@ -2,15 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: biocloud-server-{{.Release.Name}}
+  labels:
+    app: server
 spec:
+  selector:
+    matchLabels:
+      app: server
   replicas: 1
   template:
     metadata:
       labels:
-        app: biocloud-server-{{.Release.Name}}
+        app: server
     spec:
       containers:
-      - name: biocloud-server-{{.Release.Name}}
+      - name: server
         image: bly01854/biocloud-server:latest
         ports:
         - containerPort: 80
