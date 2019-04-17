@@ -1,3 +1,8 @@
 title: "BioCloud-Server"
-
+port: 80
+servReplicas: 1
 serviceNameFront: BioCloud-Server-Service
+
+db:
+  mysqlRootPassword: randomR00T
+  mysqlDatabase: biodb
